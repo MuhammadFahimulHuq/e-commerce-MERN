@@ -18,7 +18,7 @@ const orderSchema = mongoose.Schema({
     
         }
     ],
-    shippingAdress:{
+    shippingAddress:{
         address:{type:String,required:true},
         city:{type:String,required:true},
         postalCode:{type:String,required:true},
@@ -68,6 +68,7 @@ const orderSchema = mongoose.Schema({
         required:true,
         default:false
     },
+
     deliveredAt:{
         type:Date
     }
